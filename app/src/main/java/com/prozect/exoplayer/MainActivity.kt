@@ -35,7 +35,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
-        //
+        //fetch videos from pixybay api
+        //using retrofit
+        
         var arrayList: ArrayList<Hits> = arrayListOf()
         val retrofit = RetrofitVideo.getInstance()
         val apiInterface = retrofit.create(ApiMethods::class.java)
